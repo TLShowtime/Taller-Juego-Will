@@ -10,8 +10,6 @@ dimension = 20
 for i in range(3):
     for j in range(3):
         cont += 1
-        listaBotones += [ tk.Button(ventana,text=str(cont),compound="c",height=10,width=20) ] 
-        ## cambios del boton
-        listaBotones[-1].grid(row=i,column=j)
+        listaBotones += [ tk.Button(ventana,text=str(cont),compound="c",height=10,width=20).grid(row=i,column=j) ] 
 
 ventana.mainloop()
